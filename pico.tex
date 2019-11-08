@@ -2,7 +2,7 @@
 %Abstracted and templated by Brian Ballsun-Stanton, Macquarie University.
 %original template by https://github.com/snowtechblog/pico-latex-presentation by Anselm Köhler
 
-\documentclass[unknownkeysallowed,usepdftitle=false, parskip=full]{beamer}
+\documentclass[unknownkeysallowed,usepdftitle=false, parskip=full, aspectratio-1610]{beamer}
 % unknownkeysallowed is needed for mac and the newer latex version -> is more picky than before...
 \usetheme[headheight=1cm,footheight=2cm]{boxes}
 %\usetheme{default}
@@ -63,7 +63,7 @@
 \setbeamerfont{caption}{size*={0.1pt}{0.0pt}}
 	
 % Title setup	
-\title{RBTools for Mac}
+\title{RBTools}
 \author{Osmond Chiu\inst (\texttt{osmond.chiu@student.mq.edu.au})}
 \institute{Macquarie University}
 % add title in headbox
@@ -186,10 +186,11 @@ Common problems with these tasks:
 
  \end{column}
     \begin{column}[c]{0.5\textwidth}
-\includegraphics[width=1\textwidth,height=0.5\textheight,keepaspectratio]{stress.jpg}\\
-Image by \href{https://pixabay.com/users/TeroVesalainen-809550/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2119711}{TeroVesalainen} from \href{https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2119711}{Pixabay}
+\includegraphics[width=1\textwidth,height=0.5\textheight,keepaspectratio]{pdf.png}\\
 
  \vspace{12pt}
+
+
  
    \end{column}
   \end{columns}
@@ -206,23 +207,28 @@ Image by \href{https://pixabay.com/users/TeroVesalainen-809550/?utm_source=link-
 \begin{columns}[t]
 \begin{column}[c]{0.5\textwidth}
       
-      Three tools for research basics, \href{https://github.com/MQ-FOAR705/Osmond-Chiu---Proof-of-Concept---Implementation.git}{\textbf{one download}} for MacOS
+      I have written an installer for MacOS so you can access three tools using \href{https://github.com/MQ-FOAR705/Osmond-Chiu---Proof-of-Concept---Implementation.git}{\textbf{one download}}
  
       \vspace{12pt}
       
-      Functions include annotation, tagging, search engine, reference manager
+      Tool functions include annotation, tagging, search engine, reference management
       
       \vspace{12pt}
  
-      Save time on tasks that could be spent on better your research!
+      It will save you time on tasks that could be better spent on improving your research!
 
  \end{column}
     \begin{column}[c]{0.5\textwidth}
 
  
- \includegraphics[width=1\textwidth,height=0.5\textheight,keepaspectratio]{relax.jpg}\\
- Photo by \href{https://www.pexels.com/@olly?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels}{bruce mars} from  \href{https://www.pexels.com/photo/photo-of-man-holding-a-book-927022/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels}{Pexels}
+ \includegraphics[width=1\textwidth,height=0.25\textheight,keepaspectratio]{figure/OpenSemanticSearch.png}\\
+ \vspace{12pt}
  
+\includegraphics[width=1\textwidth,height=0.25\textheight,keepaspectratio]{figure/Zotero.png}\\
+\vspace{12pt}
+ 
+\includegraphics[width=1\textwidth,height=0.25\textheight,keepaspectratio]{figure/Hypothesis.png}\\
+
    \end{column}
   \end{columns}
 }
@@ -255,10 +261,10 @@ Three useful, integrated tools for any researcher:
 
 VirtualBox enables you to create a Virtual Machine where you can run another Operating System.
   \vspace{0.5cm}
+  
   \includegraphics[width=1\textwidth,height=0.5\textheight,keepaspectratio]{%
-figure/VirtualBox.png}  
-
-Image by Oracle Corporation from \href{https://www.virtualbox.org/manual/}{Oracle® VM VirtualBox® User Manual}.
+figure/VirtualBox.png}\\  
+\tiny Image by Oracle Corporation from \href{https://www.virtualbox.org/manual/}{Oracle® VM VirtualBox® User Manual}.
 
 \end{frame}
 
@@ -274,7 +280,7 @@ Open Semantic Search is an integrated research tools for easier searching, monit
 \includegraphics[width=1\textwidth,height=0.5\textheight,keepaspectratio]{%
 figure/OpenSemanticSearch.png}  
 
-Image from \href{https://www.opensemanticsearch.org/doc/search}{Open Semantic Search}
+\tiny Image from \href{https://www.opensemanticsearch.org/doc/search}{Open Semantic Search}
 
 \end{frame}
 
@@ -289,7 +295,7 @@ Zotero is an open-source reference and bibliography management tool.
 \includegraphics[width=1\textwidth,height=0.5\textheight,keepaspectratio]{%
 figure/Zotero.png}
 
-Image from \href{https://www.zotero.org/}{Zotero}
+\tiny Image from \href{https://www.zotero.org/}{Zotero}
 
 
 \end{frame}
@@ -309,7 +315,7 @@ Hypothes.is is an annotation tool for digital documents.
 \includegraphics[width=1\textwidth,height=0.7\textheight,keepaspectratio]{%
 figure/Hypothesis.png}
 
-Image from \href{https://web.hypothes.is/annotation-tips-for-students/}{Annotation Tips} for Students by Hypothes.is 
+\tiny Image from \href{https://web.hypothes.is/annotation-tips-for-students/}{Annotation Tips} for Students by Hypothes.is 
 
 \end{frame}
 
@@ -318,13 +324,17 @@ Image from \href{https://web.hypothes.is/annotation-tips-for-students/}{Annotati
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}\label{\secvariable}
   
-With RBTools for Mac installed, you will be able to  
+With RBTools, you will be able to  
   \begin{itemize}
    \item annotate, highlight and tag webpages. 
   \item apply a search engine to index documents, automatically tag documents, search and text mine its contents, do analytics and data visualisations.
   \item create and manage references and bibliographies for any text editor and directly inside programs.
 
   \end{itemize}
+
+  \vspace{0.5cm}
+
+You can download the RBTools installer and instructions from \href{https://github.com/MQ-FOAR705/Osmond-Chiu---Proof-of-Concept---Implementation}{https://github.com/MQ-FOAR705/Osmond-Chiu---Proof-of-Concept---Implementation}
 
 \end{frame}
 
